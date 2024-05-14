@@ -1,0 +1,310 @@
+/* some variable those are needed many times. */
+:root{
+    --yellow:#ffdd00;
+    --lightDark:#333333;
+    --footerBg:#1a1c20;
+    --poppins: 'Poppins', sans-serif;
+   --montserrat: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a,p,li{
+    list-style: none;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--montserrat);
+}
+p,span,a{
+    font-family: var(--poppins);
+}
+img{
+    max-width: 100%;
+}
+/* custom css start */
+/* manu part start */
+.container{
+    max-width: 1300px;
+}
+header{
+    height: 90px;
+    line-height: 90px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: rgb(167, 150, 140);
+    z-index: 10;
+}
+header img{
+    max-width: 30%;
+}
+header nav{
+    text-align: center;
+}
+header nav a{
+    color:#333333;
+    padding: 1.7em;
+    font-weight: 600;
+    line-height: 0;
+}
+header nav a:hover{
+    color: var(--yellow);
+}
+/* manu part end */
+
+/* banner part start */
+.banner{
+    margin-top: 90px;
+    background: url(../images/b2.webp) no-repeat 20% 30%;
+    background-size: cover;
+    width: 100%;
+    height:calc(768px - 5%);
+    max-height: calc(768px - 5%);
+    user-select: none;
+    overflow: hidden;
+}
+
+.btn{
+    background: var(--yellow);
+    border-radius: 3em;
+    padding: .4em 1.6em;
+}
+.btn:hover{
+    background: var(--footerBg);
+    color: white;
+}
+a span i.xyz{
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.leftContainer{
+    transform: translateY(100%);
+    position: relative;
+    animation: bannerLeft 1s linear .0001s 1;
+}
+
+.leftContainer .subtitle{
+    letter-spacing: 16px;
+    font-size: 1.3em;
+    font-family: var(--poppins);
+    color: #ffdd00;
+}
+.leftContainer h2{
+    font-size: 3.5em;
+    color: #333333;
+}
+.leftContainer strong{
+    color: black;
+}
+.rightImg{
+    position: relative;
+    animation: bannerRight 2s linear .0001s 1 ;
+}
+.rightImg img{
+    width:75%;
+}
+/* banner animation part start*/
+@keyframes bannerLeft {
+    0%{
+        position: absolute;
+        left: -100%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes bannerRight {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+/* banner animation part end */
+/* banner section end */
+
+
+/* yellow section start */
+.yellowSec{
+    background-color: #e7cc91;
+}
+.yellowSec h4{
+    color: black;
+    padding: 1.8em 0;
+}
+.yellowSec .btn{
+    border:1px solid var(--footerBg);
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 2em;
+}
+.yellowSec .btn:hover{
+    background-color: #fff;
+    color: black;
+}
+/* yellow section end  */
+
+/* discription section start */
+.description{
+    background:url(../img/landing-background.jpg) no-repeat 20% 30% ;
+    background-size: cover;
+    text-align: center;
+}
+.outTitle{
+    padding: 3em 0;
+}
+.outTitle h6{
+    letter-spacing: 10px;
+}
+.multipleH2{
+    font-weight: 800;
+    color:black;
+    position: relative;
+}
+.multipleH2::after{
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: calc(50% - .5em);
+    margin: auto;
+    width: 1.6em;
+    height: .1em;
+    background: var(--lightDark);
+
+}
+/* discription section end */
+
+/* service box start */
+.description img{
+    max-width: 180px;
+    padding: 1em 0;
+    transition: .3s;
+}
+.description .col-md-3{
+    flex: 1;
+}
+.serviceBox .col-md-3{
+    background: white;
+    border-radius: 5px;
+    padding: 1em;
+    margin: .5em;
+}
+.description .col-md-3:hover img{
+    transform: scale(1.1);
+}
+
+.description .col-md-4{
+    flex: 2;
+}
+.serviceBox .col-md-4{
+    background: rgb(207, 177, 177);
+    border-radius: 7px;
+    padding: 5em;
+    margin: .5em;
+}
+.description .col-md-4:hover img{
+    transform: scale(1.1);
+}
+
+
+.description h4{
+    color: black;
+    font-weight: bold;
+}
+
+
+/* deliveryservices Section */
+.deliveryservices{
+    background: url(../img/sliderbg.jpg) no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 48em;
+    margin-bottom:20em ;
+}
+/* deliveryservices end */
+
+/* Our Menu section start */
+.OurMenu{
+    background: url(../img/businessman.jpg) no-repeat center scroll;
+    background-size: cover;
+    width: 100%;
+    height: 48em;
+    position: relative;
+    z-index: 1;
+}
+.OurMenu::after{
+    content: "";
+    top: 0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: -2;
+}
+.OurMenu strong{
+    font-size: 1.2em;
+}
+.pforwwu{
+    text-align: justify;
+    color: rgba(255,255,255,0.9);
+}
+/* Our Menu end */
+
+/* contact with us section start */
+.contact{
+    background: url(../img/header_bg.jpg) no-repeat center fixed;
+    box-sizing: cover;
+}
+form strong{
+    font-size: 1.2em;
+    color: #333333;
+}
+textarea{
+    resize: vertical;
+    overflow-y: auto !important;
+    background: transparent !important;
+}
+.submitBtn{
+    border-radius: .3em;
+    background: var(--yellow);
+    font-weight: bold;
+    border:none;
+    padding: .9em 2em;
+}
+.socialIcon .fa{
+    font-size: 1.3em;
+    width: 1.5em;
+    height: 1.5em ;
+    line-height: 1.6em;
+    font-weight: 500;
+    border-radius: .2em;
+    color:white;
+}
+.socialIcon .fa-facebook{
+    background: rgb(51, 51, 206);
+}
+.socialIcon .fa-twitter{
+    background: rgb(10, 149, 241);
+}
+.socialIcon .fa-instagram{
+    background: linear-gradient(to top left, rgb(109, 109, 241),rgb(219, 12, 209));
+}
+.socialIcon .fa-envelope{
+    background: var(--yellow);
+}
+/* contact section end */
+
+

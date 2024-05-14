@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This template are made/clone for only practice. all image form internet.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery shop</title>
+  <!-- Bootstrap link here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- fonts cdn link here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+  <!-- font awesome 4.7.0 cdn link here
+  <link rel="stylesheet" href="css/font-awesome.css" />
+
+   style.css file here -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- responsive.css file here -->
+  <link rel="stylesheet" href="css/responsive.css"> 
+</head>
+<body>
+
+    <!-- loader part start -->
+    <style>
+    #loader{
+    background: #000 url(img/loader.gif) no-repeat center;
+    background-size: 15%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    }
+    </style>
+    <div id="loader"></div>
+    <script>
+        window.addEventListener('load',function(){
+        let x= document.getElementById('loader');
+            x.style.display='none';
+        })
+    </script>
+    <!-- loader part end -->
+
+
+    <!-- Header Section Start -->
+    <header class="clearfix">
+        <div class="container">
+            <div class="headerLeft float-left w-25">
+                <a href="#" class="logo">
+                    <img src="images/log.png" class="" alt="logo">
+                </a>               
+            </div>
+
+            <div class="headerRight float-right w-75">
+                <input type="radio" name="resposiveRadio" id="radioBar" hidden>
+                <label for="radioCross" id="secentIcon"><i class="fa fa-times" aria-hidden="true"></i></label>
+                <input type="radio" name="resposiveRadio" id="radioCross" hidden>
+            <label for="radioBar" id="firstIcon"><i class="fa fa-bars" aria-hidden="true"></i></label> 
+            <!-- navbar -->
+            <nav class="headerMenu">
+                <a href="#" class="fst">Home</a>
+                <a href="#description">description</a>
+                <a href="#BakeryItems">Bakery Items</a>
+                <a href="#deliveryservices">delivery services</a>
+                <a href="#OurMenu">Our Menu</a>
+                <a href="#contactUs">Contact</a>
+            </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Section Start -->
+    <section class="banner">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6">
+                    <div class="leftContainer" id="lCiD">
+                        <h6 class="subtitle">Best Bread For You</h6>
+                        <h2><strong>Organic</strong>Bread</h2>
+                        <p class="lead" style="color: var(--lightDark);">Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A lacus vestibulum sed arcu non. </p>
+                        <a href="#" class="btn">Learn More <span><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </span></a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="rightImg">
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yellow Section Start -->
+    <section class="yellowSec">
+        <div class="container">
+            <div class="row py-3 align-items-center">
+                <div class="col-md-9">
+                    <h4 class="font-weight-bold">We offer you the best fresh baked goods with high quality and at a reasonable price</h4>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- description Section Start -->
+    <section class="description py-5" id="description">
+        <div class="container">
+            <!-- title -->
+            <div class="row">
+                <div class="outTitle py-5 text-center">
+                    <h2 class="multipleH2">Delicious Baking</h2>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="row serviceBox g-0 py-5">
+                <div class="col-md-3 shadow-sm ">
+                    <img src="images/ash.png" alt="">
+                    <h4>BAKED FRESH DAILY</h4>
+                    <p>Our bread is baked fresh daily, contains no preservatives and is very high in quality. It is also especially nice and soft</p>
+                </div>
+                <div class="col-md-3 shadow-sm">
+                    <img src="images/ash2.png" alt="">
+                    <h4>GREAT VALUE</h4>
+                    <p>With the most competitive prices on the market we are able to deliver great value without compromising on taste</p>
+                </div>
+                <div class="col-md-3 shadow-sm">
+                    <img src="images/qasr.png" alt="">
+                    <h4>INSTITUTIONS</h4>
+                    <p>We serve a wide range of institutions including universities, airlines, hotels and schools. Order daily for tomorrow</p>
+                </div>
+                <div class="col-md-3 shadow-sm">
+                    <img src="images/mdrb.png" alt="">
+                    <h4>DELICIOUS BAKING</h4>
+                    <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yellow Section Start -->
+    <section class="yellowSec">
+        <div class="container">
+            <div class="row py-3 align-items-center">
+                <div class="col-md-9">
+                    <h4 class="font-weight-bold">We choose the best bakers to create delicious baked goods for you and your family</h4>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn">order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bakery Items Section Start -->
+    <section class="description py-5" id="BakeryItems">
+        <div class="container">
+            <!-- title -->
+            <div class="row">
+                <div class="outTitle py-5 text-center">
+                    <h6 class="py-1">Choose your favorite meal</h6>
+                    <h2 class="multipleH2">Bakery Items</h2>
+                </div>
+            </div>
+            <!-- boxes -->
+            <div class="row serviceBox g-0 py-5">
+                <div class="col-md-4 shadow-sm ">
+                    <img src="images/bagut.jpg" alt="">
+                    <h4>BAGUETTE</h4>
+                    <p class="p">Small-batch sourdough baguette.</p>
+                    <h5 class="titl">$4.5</h5>
+                </div>
+                <div class="col-md-4 shadow-sm">
+                    <img src="images/sourd.jpg" alt="">
+                    <h4>SOURDOUGH BREAD</h4>
+                    <p class="p">Sample text. Click to select the Text Element.</p>
+                    <h5 class="titl">$5.25</h5>
+                </div>
+                <div class="col-md-4 shadow-sm">
+                    <img src="images/mixed.jpg" alt="">
+                    <h4>MIXED GRAIN</h4>
+                    <p class="p">Sample text. Click to select the Text Element.</p>
+                    <h5 class="titl">$4.5</h5>
+                </div>
+                <div class="col-md-4 shadow-sm">
+                    <img src="images/milk.jpg" alt="">
+                    <h4>MILK BREAD</h4>
+                    <p class="p">Sample text. Click to select the Text Element.</p>
+                    <h5 class="titl">$3.55</h5>
+                </div>
+                <div class="col-md-4 shadow-sm">
+                    <img src="images/brown.jpg" alt="">
+                    <h4>BROWN BREAD</h4>
+                    <p class="p">Sample text. Click to select the Text Element.</p>
+                    <h5 class="titl">$2.45</h5>
+                </div>
+                <div class="col-md-4 shadow-sm">
+                    <img src="images/cinabon.jpg" alt="">
+                    <h4>CINNABON</h4>
+                    <p>Sample text. Click to select the Text Element.</p>
+                    <h5 class="titl">$1.5</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- delivery services Section Start -->
+    <section class="deliveryservices py-5" id="deliveryservices">
+        <div class="container">
+            <div class="row py-5 clearfix">
+                <div class="outTitle py-5 text-center">
+                    <h2 class="multipleH2 h1">Express delivery services</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="partnerFecilityBox">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <div class="faxilityBoxIcon">
+                                    <img src="images/car.png" class="w-50" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="rightContant">
+                                    <h3>Order from anywhere
+                                    </h3>
+                                    <strong>DELIVERY TO YOUR DOOR
+                                    </strong>
+                                    <p>One of the things we care about most is accuracy <br> and delivering the order on time.</p>
+                                </div>
+                            </div>
+                        </div>                  
+                        
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <div class="faxilityBoxIcon">
+                                    <img src="images/box.png" class="w-50" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-9">
+                                <div class="rightContant">
+                                    <h3>No Order Too Large</h3>
+                                    <p>Sample text. Click to select the text box.<br>  Click again or double click to start editing the text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="btn py-2 font-weight-bold px-4">Order Now</a>
+                        </div>
+                    </div>           
+                </div>
+            
+                <div class="col-md-6 pbx">
+                    <img src="img/super-app-mockup.png" class="w-50% neededP" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Our Menu Section Start -->
+    <section class="OurMenu py-5" id="OurMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/mixed.jpg" alt="">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="outTitle py-5 text-center">
+                        <h2 class="multipleH2 text-white h1">Our Menu</h2>
+                    </div>
+
+                    <div class="text-white">
+                        <strong class="py-3">Choose your favorite meal then order it
+                        </strong>
+                        <p class="my-3 font-weight-light pforwwu lead">We are constantly iterating, solving problems and working together to  connect people. Our workforce reflects the diversity of the people we  serve. Hiring people with different talent and different point of views help  us make better decisions, build better products and create better  experiences for everyone.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#" class="btn py-3 font-weight-bold mt-4 px-5">View menue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conatact Section Start -->
+    <section class="contact" id="contactUs">
+        <div class="container">
+            <div class="row">
+                <div class="outTitle py-5 text-center">
+                    <h2 class="multipleH2 h1">Contact us</h2>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="row">
+                        <div class="col">
+                            <label for="name" class="d-block"><strong>Your Name</strong></label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="col">
+                            <label for="email" class="d-block"><strong>Email address *</strong></label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        </div>
+                        <br>
+
+                        <label for="phone" class="d-block"><strong>Phone</strong></label>
+                        <input type="number" id="phone" class="form-control" placeholder="Your Phone" >                    
+                        <br>
+
+                        <label for="msg" class="d-block"><strong>Message *</strong></label>
+                        <textarea type="number" rows="5" id="msg" class="form-control" placeholder="Your Message" required></textarea>
+                        <br>
+
+                        <a href="#">
+                            <input type="submit" class="submitBtn" value="Submit">
+                        </a>
+                    </form>
+
+                    <div class="socialIcon text-center py-5">
+                        <nav>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                            <a href="#"><i class="fa fa-envelope " aria-hidden="true"></i></i></a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
